@@ -5,7 +5,11 @@
 }
 
 body {
+  color: whitesmoke;
+  height: 100vh;
   background-color: #f7f7fd;
+  background-color: rgb(122, 20, 122);
+  background: url("images/background.jpg") no-repeat center;
 }
 
 /* Custom Class */

@@ -36,7 +36,6 @@ const App = () => {
 
     try {
       const response = await axios.get(`${apiURL}/${postCode}`);
-      console.log(response.data);
 
       if (response.status === 200) {
         setPostData(response.data[0]);
@@ -65,7 +64,7 @@ const App = () => {
 
   return (
     <div>
-      <div className="body-title">POSTCODE EXPLORER</div>
+      <div className="body-title text-light">POSTCODE EXPLORER</div>
       <Suspense fallback={<Loader />}>
         {!submitted && (
           <SearchForm onSubmit={handleSubmit} notification={showNotification} />

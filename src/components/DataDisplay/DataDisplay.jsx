@@ -2,6 +2,7 @@ import React from "react";
 import "./DataDisplay.css";
 
 const DataDisplay = ({ postCode, postData }) => {
+  console.log(postData);
   return (
     <div id="data-display" className="px-5">
       {/* Side Data */}
@@ -19,7 +20,7 @@ const DataDisplay = ({ postCode, postData }) => {
       <div className="main-display">
         <div className="postal-data">POSTAL DATA</div>
         <div className="my-flex-center display-inner">
-          {postData.length > 0 ? (
+          {postData || postData.length > 0 ? (
             postData.PostOffice.length > 0 ? (
               postData.PostOffice.map((postal, index) => (
                 <div key={`postal-${index}`} className="data-outer">
