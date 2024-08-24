@@ -1,0 +1,51 @@
+* {
+  font-family: "Varela Round", "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f7f7fd;
+}
+
+/* Custom Class */
+.my-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.my-flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.my-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.my-flex-row-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.hide-data {
+  display: none;
+}
+
+.dash-title {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/*  Buttons */
+.btn-curved {
+  border-radius: 15px;
+}
+.btn-prima {
+  background-color: green;
+  border: none;
+}
+.btn-prima:hover {
+  background-color: darken(green, 10%);
+}

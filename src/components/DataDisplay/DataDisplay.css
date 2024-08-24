@@ -1,0 +1,34 @@
+.postal-data {
+  text-align: center;
+  font-size: 18px;
+  margin: 15px 0;
+  font-weight: 600;
+}
+
+.pincode,
+.message {
+  font-size: 19px;
+  margin: 10px 0;
+}
+
+.display-inner {
+  flex-wrap: wrap;
+}
+
+.data-outer {
+  margin: 2%;
+  width: 28%;
+  background-color: white;
+  padding: 2%;
+  border: 1px solid grey;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  .post-content {
+    padding: 3px 0;
+  }
+}
+
+.no-postal {
+  font-size: 22px;
+  height: 50vh;
+}
