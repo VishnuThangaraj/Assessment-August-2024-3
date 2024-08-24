@@ -40,7 +40,9 @@ const App = () => {
       if (response.status === 200) {
         setPostData(response.data[0]);
       } else {
-        setPostData([]);
+        setPostData({
+          message: " No records found",
+        });
       }
     } catch (error) {
       showNotification("Failed to Fetch Data from API", "error");
